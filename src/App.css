@@ -1,0 +1,48 @@
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+}
+.container{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+.box {
+  background-color: #00dce8;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 10px 50px 50px 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.a {
+  /*
+    O primeiro número (1) significa onde meu bloco se inicia, na posição 1 nesse caso
+    O segundo número (3) significa onde meu bloco deve terminar, logo ele termina na posição 2
+    Caso seja passado apenas um número, significa que ele irá começar e terminar em determinada
+    posição.
+    Isso vale para grid-row também.
+  */
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+
+.b {
+  /*
+    O primeiro número (1) significa onde meu bloco se inicia, na posição 1 nesse caso
+    O segundo número (3) significa onde meu bloco deve terminar, logo ele termina na posição 2
+    Caso seja passado apenas um número, significa que ele irá começar e terminar em determinada
+    posição.
+    Isso vale para grid-row também.
+  */
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
